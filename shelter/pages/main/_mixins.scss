@@ -1,0 +1,62 @@
+@mixin paragraph-l {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@mixin paragraph-s {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@mixin logo_title {
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+@mixin logo_subtitle {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+@mixin button_text {
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: $color-dark-3xl;
+}
+
+@mixin button_primary {
+    padding: 15px 45px;
+    background: $color-primary;
+    border-radius: 100px;
+    border: none;
+    @include button_text;
+
+}
+
+@mixin button_secondary {
+    padding: 15px 45px;
+    border-radius: 100px;
+    @include button_text;
+    border: 2px solid #F1CDB3;
+}
