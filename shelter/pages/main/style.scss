@@ -233,3 +233,41 @@ main {
         }
     }
 }
+
+.donation {
+    background-color: $color-light-l;
+    padding: 80px 0px 100px;
+    &-wrap {
+        width: 915px;
+        margin: 0px auto 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            row-gap: 20px;
+            color: $color-dark-l;
+            p {
+                color: $color-dark-m;
+                font-family: Arial;
+                font-size: 12px;
+                font-style: italic;
+                font-weight: 400;
+                line-height: 18px;
+                letter-spacing: 0px;
+                text-align: left;
+            }
+            &-credit_card {
+                display: flex;
+                column-gap: 15px;
+                padding: 10px 15px;
+                background-color: $color-primary;
+                border-radius: 9px;
+            }
+
+        }
+    }
+}
