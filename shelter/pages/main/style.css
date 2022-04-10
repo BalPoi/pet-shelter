@@ -143,7 +143,7 @@ main {
 }
 
 .start_screen header nav ul a:hover {
-  color: #FAFAFA;
+  color: #fafafa;
 }
 
 .start_screen header nav ul a.current:link, .start_screen header nav ul a.current:visited {
@@ -229,13 +229,13 @@ main {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
-  color: #4C4C4C;
+  color: #4c4c4c;
   margin-top: 25px;
 }
 
 .pets {
   padding: 80px 100px 40px;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
