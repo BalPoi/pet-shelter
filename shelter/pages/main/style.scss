@@ -4,6 +4,7 @@
 
 html {
     box-sizing: border-box;
+    background-color: $color-primary;
 }
 
 *,
@@ -13,6 +14,8 @@ html {
 }
 
 h2 {
+    margin: 0;
+    padding: 0;
     font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
@@ -23,6 +26,8 @@ h2 {
 }
 
 h3 {
+    margin: 0;
+    padding: 0;
     font-family: Georgia;
     font-size: 35px;
     font-weight: 400;
@@ -32,6 +37,8 @@ h3 {
 }
 
 h4 {
+    margin: 0;
+    padding: 0;
     font-family: Georgia;
     font-size: 20px;
     font-weight: 400;
@@ -41,12 +48,19 @@ h4 {
 }
 
 h5 {
+    margin: 0;
+    padding: 0;
     font-family: Georgia;
     font-size: 15px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0.06em;
     text-align: left;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -63,9 +77,6 @@ a {
 
 }
 
-
-
-
 ul {
     padding: 0;
 }
@@ -77,6 +88,8 @@ main {
     // border: 1px solid black;
     // height: 100vh;
 }
+
+
 
 .start_screen {
     background: url(../../assets/images/noise_transparent@2x.png),
@@ -147,5 +160,25 @@ main {
 }
 
 .about {
-    height: 1000px;
+    background-color: $color-light-xl;
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    img {
+        margin-left: 175px;
+    }
+    &-text {
+        margin-top: 14px;
+        margin-left: 120px;
+        margin-right: 175px;
+        h3 {
+            margin-right: 30px;
+            color: $color-dark-l;
+        }
+        p {
+            @include paragraph-l;
+            color: $color-dark-xl;
+            margin-top: 25px;
+        }
+    }
 }

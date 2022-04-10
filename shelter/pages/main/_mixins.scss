@@ -50,6 +50,7 @@
     background: $color-primary;
     border-radius: 100px;
     border: none;
+    cursor: pointer;
     @include button_text;
 
 }
@@ -57,6 +58,7 @@
 @mixin button_secondary {
     padding: 15px 45px;
     border-radius: 100px;
+    cursor: pointer;
     @include button_text;
     border: 2px solid #F1CDB3;
 }
