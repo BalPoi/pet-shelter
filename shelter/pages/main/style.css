@@ -232,4 +232,46 @@ main {
   color: #4C4C4C;
   margin-top: 25px;
 }
+
+.pets {
+  padding: 80px 100px 40px;
+  background-color: #F6F6F6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pets h3 {
+  width: 400px;
+  color: #545454;
+  text-align: center;
+}
+
+.pets button {
+  padding: 15px 45px;
+  background: #f1cdb3;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-family: Georgia;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #292929;
+}
+
+.pets .pet-slider {
+  height: 435px;
+  width: 1200px;
+  margin: 60px 0px;
+}
 /*# sourceMappingURL=style.css.map */

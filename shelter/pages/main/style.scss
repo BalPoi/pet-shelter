@@ -182,3 +182,24 @@ main {
         }
     }
 }
+
+.pets {
+    padding: 80px 100px 40px;
+    background-color: $color-light-l;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+        width: 400px;
+        color: $color-dark-l;
+        text-align: center;
+    }
+    button {
+        @include button_primary;
+    }
+    .pet-slider {
+        height: 435px;
+        width: 1200px;
+        margin: 60px 0px;
+    }
+}
