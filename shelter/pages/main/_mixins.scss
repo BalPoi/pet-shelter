@@ -52,6 +52,9 @@
     border: none;
     cursor: pointer;
     @include button_text;
+    &:hover {
+        background-color: $color-primary-light;
+    }
 }
 
 @mixin button_secondary {
@@ -60,4 +63,7 @@
     cursor: pointer;
     @include button_text;
     border: 2px solid #f1cdb3;
+    &:hover {
+        background-color: $color-primary-light;
+    }
 }
