@@ -1,0 +1,23 @@
+{
+  "name": "shelter",
+  "description": "Private repository for @balpoi",
+  "version": "1.0.0",
+  "main": "shelter/pages/main/script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/balpoi-JSFE2022Q1.git"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "author": "Pavel Bal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/balpoi-JSFE2022Q1/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/balpoi-JSFE2022Q1#readme"
+}
