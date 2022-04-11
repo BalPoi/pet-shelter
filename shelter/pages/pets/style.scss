@@ -4,9 +4,12 @@
 @import "../../SCSS/common";
 
 header {
-    margin: 30px 40px;
+    position: sticky;
+    top: 0px;
+    padding: 30px 40px;
     display: flex;
     justify-content: space-between;
+    background-color: $color-light-xl;
     .logo {
         &-title {
             @include logo_title;
@@ -23,9 +26,7 @@ header {
     nav ul {
         list-style: none;
         display: flex;
-        li:not(:first-child) {
-            margin-left: 35px;
-        }
+        column-gap: 35px;
         a {
             padding: 4px 0px;
             color: $color-dark-l;

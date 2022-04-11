@@ -91,13 +91,17 @@ main {
 }
 
 header {
-  margin: 30px 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 30px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: #ffffff;
 }
 
 header .logo-title {
@@ -127,10 +131,8 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-header nav ul li:not(:first-child) {
-  margin-left: 35px;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
 }
 
 header nav ul a {
