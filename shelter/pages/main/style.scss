@@ -100,6 +100,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    row-gap: 60px;
     h3 {
         width: 400px;
         color: $color-dark-l;
@@ -109,9 +110,46 @@
         @include button_primary;
     }
     .pet-slider {
-        height: 435px;
-        width: 1200px;
-        margin: 60px 0px;
+        // height: 435px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // column-gap: 90px;
+        button.arrow {
+            @include button_arrow;
+        }
+        .pet_card {
+            // width: 270px;
+            // height: 437px;
+            display: flex;
+            border-radius: 9px;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+            background-color: $color-light-s;
+            // border: black 1px solid;
+            cursor: pointer;
+            .pet_name {
+                font-family: Georgia;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 23px;
+                letter-spacing: 0.06em;
+                text-align: center;
+                color: $color-dark-l;
+            }
+            button {
+                @include button_secondary;
+                margin-bottom: 30px;
+                height: 52px;
+            }
+            &:hover {
+                button {
+                    background-color: $color-primary-light;
+                }
+            }
+        }
     }
 }
 
