@@ -150,8 +150,143 @@ header nav ul a.current:link, header nav ul a.current:visited {
 }
 
 section.pets {
-  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 40px 100px;
   background-color: #f6f6f6;
+  row-gap: 45px;
+}
+
+section.pets h3 {
+  text-align: center;
+  color: #545454;
+}
+
+section.pets .cards_container {
+  padding: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+section.pets .cards_container .pet_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9px;
+  row-gap: 30px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+section.pets .cards_container .pet_card img {
+  border-radius: 9px 9px 0 0;
+  width: 270px;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.pets .cards_container .pet_card .pet_name {
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+section.pets .cards_container .pet_card button {
+  padding: 15px 45px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Georgia;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #292929;
+  border: 2px solid #f1cdb3;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 30px;
+  height: 52px;
+}
+
+section.pets .cards_container .pet_card button:hover {
+  background-color: #fddcc4;
+}
+
+section.pets .cards_container .pet_card:hover button {
+  background-color: #fddcc4;
+}
+
+section.pets .navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+section.pets .navigator button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+section.pets .navigator button:hover {
+  background-color: #f1cdb3;
+}
+
+section.pets .navigator button:disabled {
+  color: #cdcdcd;
+  border-color: #cdcdcd;
+  pointer-events: none;
+}
+
+section.pets .navigator button.current {
+  background-color: #f1cdb3;
 }
 
 footer {
