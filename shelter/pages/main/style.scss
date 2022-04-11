@@ -245,7 +245,6 @@ main {
         &-text {
             display: flex;
             flex-direction: column;
-            align-items: left;
             row-gap: 20px;
             color: $color-dark-l;
             p {
@@ -300,12 +299,12 @@ footer {
     }
     .mail,
     .phone,
-    address {
+    .locations-item {
         display: flex;
         align-items: center;
         column-gap: 20px;
     }
-    address {
+    .locations-item {
         font-style: normal;
     }
 }

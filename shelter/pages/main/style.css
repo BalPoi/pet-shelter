@@ -371,9 +371,6 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
   row-gap: 20px;
   color: #545454;
 }
@@ -441,7 +438,7 @@ footer .locations {
 
 footer .mail,
 footer .phone,
-footer address {
+footer .locations-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -452,7 +449,7 @@ footer address {
           column-gap: 20px;
 }
 
-footer address {
+footer .locations-item {
   font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */
