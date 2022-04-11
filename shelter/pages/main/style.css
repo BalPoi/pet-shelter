@@ -37,9 +37,10 @@ h3 {
 h4 {
   margin: 0;
   padding: 0;
-  font-family: Georgia;
-  font-size: 20px;
+  font-family: "Georgia";
+  font-style: normal;
   font-weight: 400;
+  font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.06em;
   text-align: left;
@@ -397,5 +398,61 @@ main {
   padding: 10px 15px;
   background-color: #f1cdb3;
   border-radius: 9px;
+}
+
+footer {
+  background: url(../../assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+  padding: 40px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 155px;
+          column-gap: 155px;
+}
+
+footer h3 {
+  color: #ffffff;
+}
+
+footer h4 {
+  color: #f1cdb3;
+}
+
+footer .contacts {
+  width: 500px;
+}
+
+footer .contacts,
+footer .locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 16px;
+  row-gap: 40px;
+}
+
+footer .locations {
+  row-gap: 33px;
+}
+
+footer .mail,
+footer .phone,
+footer address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+footer address {
+  font-style: normal;
 }
 /*# sourceMappingURL=style.css.map */

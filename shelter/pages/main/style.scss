@@ -39,9 +39,10 @@ h3 {
 h4 {
     margin: 0;
     padding: 0;
-    font-family: Georgia;
-    font-size: 20px;
+    font-family: "Georgia";
+    font-style: normal;
     font-weight: 400;
+    font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.06em;
     text-align: left;
@@ -83,9 +84,6 @@ ul {
 main {
     width: 1280px;
     margin: 0 auto;
-
-    // border: 1px solid black;
-    // height: 100vh;
 }
 
 .start_screen {
@@ -267,7 +265,47 @@ main {
                 background-color: $color-primary;
                 border-radius: 9px;
             }
-
         }
+    }
+}
+
+footer {
+    background: url(../../assets/images/noise_transparent@2x.png),
+        radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        #211f20;
+    // background: url(../../assets/images/footer-background.png);
+    padding: 40px 40px 0px;
+    display: flex;
+    column-gap: 155px;
+    h3 {
+        color: $color-light-xl;
+    }
+    h4 {
+        color: $color-primary;
+    }
+    .contacts {
+        width: 500px;
+    }
+    .contacts,
+    .locations {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        row-gap: 40px;
+    }
+
+    .locations {
+        row-gap: 33px;
+    }
+    .mail,
+    .phone,
+    address {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+    address {
+        font-style: normal;
     }
 }
