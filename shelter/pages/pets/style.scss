@@ -1,0 +1,88 @@
+@import "../../SCSS/fonts";
+@import "../../SCSS/mixins";
+@import "../../SCSS/variables";
+@import "../../SCSS/common";
+
+header {
+    margin: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+        &-title {
+            @include logo_title;
+            color: $color-dark-l;
+            margin-bottom: 10px;
+        }
+        &-subtitle {
+            @include logo_subtitle;
+            color: $color-dark-3xl;
+
+            text-align: center;
+        }
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        li:not(:first-child) {
+            margin-left: 35px;
+        }
+        a {
+            padding: 4px 0px;
+            color: $color-dark-l;
+            text-decoration: none;
+            &:hover {
+                color: $color-dark-3xl;
+            }
+            &.current:link,
+            &.current:visited {
+                border-bottom: 3px solid $color-primary;
+            }
+        }
+    }
+}
+
+section.pets {
+    height: 1000px;
+    background-color: $color-light-l;
+}
+
+footer {
+    background: url(../../assets/images/noise_transparent@2x.png),
+        radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+        #211f20;
+    // background: url(../../assets/images/footer-background.png);
+    padding: 40px 40px 0px;
+    display: flex;
+    column-gap: 155px;
+    h3 {
+        color: $color-light-xl;
+    }
+    h4 {
+        color: $color-primary;
+    }
+    .contacts {
+        width: 500px;
+    }
+    .contacts,
+    .locations {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        row-gap: 40px;
+    }
+
+    .locations {
+        row-gap: 33px;
+    }
+    .mail,
+    .phone,
+    .locations-item {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .locations-item {
+        font-style: normal;
+    }
+}
