@@ -257,6 +257,7 @@ section.pets .cards_container .pet_card button {
 
 section.pets .cards_container .pet_card button:hover {
   background-color: #fddcc4;
+  border-color: #fddcc4;
 }
 
 section.pets .cards_container .pet_card:hover button {

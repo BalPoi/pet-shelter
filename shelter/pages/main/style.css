@@ -420,6 +420,7 @@ main {
 
 .pets .pet-slider .cards_wraper .pet_card button:hover {
   background-color: #fddcc4;
+  border-color: #fddcc4;
 }
 
 .pets .pet-slider .cards_wraper .pet_card:hover button {
