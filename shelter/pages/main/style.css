@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Georgia";
+  src: url(./assets/fonts/georgia.ttf);
+}
+
+@font-face {
+  font-family: "Georgia Bold";
+  src: url(./assets/fonts/georgia_bolditalic.ttf);
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url(./assets/fonts/arial.ttf);
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -337,7 +352,15 @@ main {
   background-color: #f1cdb3;
 }
 
-.pets .pet-slider .pet_card {
+.pets .pet-slider .cards_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 90px;
+          column-gap: 90px;
+}
+
+.pets .pet-slider .cards_wraper .pet_card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,7 +377,7 @@ main {
   cursor: pointer;
 }
 
-.pets .pet-slider .pet_card img {
+.pets .pet-slider .cards_wraper .pet_card img {
   border-radius: 9px 9px 0 0;
   width: 270px;
   height: 270px;
@@ -362,7 +385,7 @@ main {
      object-fit: cover;
 }
 
-.pets .pet-slider .pet_card .pet_name {
+.pets .pet-slider .cards_wraper .pet_card .pet_name {
   font-family: Georgia;
   font-size: 20px;
   font-weight: 400;
@@ -372,7 +395,7 @@ main {
   color: #545454;
 }
 
-.pets .pet-slider .pet_card button {
+.pets .pet-slider .cards_wraper .pet_card button {
   padding: 15px 45px;
   border-radius: 100px;
   cursor: pointer;
@@ -395,11 +418,11 @@ main {
   height: 52px;
 }
 
-.pets .pet-slider .pet_card button:hover {
+.pets .pet-slider .cards_wraper .pet_card button:hover {
   background-color: #fddcc4;
 }
 
-.pets .pet-slider .pet_card:hover button {
+.pets .pet-slider .cards_wraper .pet_card:hover button {
   background-color: #fddcc4;
 }
 

@@ -110,18 +110,19 @@
         @include button_primary;
     }
     .pet-slider {
-        // height: 435px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // column-gap: 90px;
         button.arrow {
             @include button_arrow;
         }
-        // FIXME: column-gap
-        .pet_card {
-           @include pet_card;
+        .cards_wraper {
+            display: flex;
+            column-gap: 90px;
+            .pet_card {
+               @include pet_card;
+            }
         }
     }
 }
