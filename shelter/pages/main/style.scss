@@ -3,159 +3,168 @@
 @import "../../SCSS/variables";
 @import "../../SCSS/common";
 
+
 .start_screen {
     background: url(../../assets/images/noise_transparent@2x.png),
         radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%)
             /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
         #211f20;
-    padding: 60px 40px 0px;
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        .logo {
-            &-title {
-                @include logo_title;
-                color: $color-primary;
-                margin-bottom: 10px;
-            }
-            &-subtitle {
-                @include logo_subtitle;
-                color: $color-light-xl;
-
-                text-align: center;
-            }
-        }
-        nav ul {
-            list-style: none;
+    .section_content_wraper {
+        padding: 60px 40px 0px;
+        header {
             display: flex;
-            li:not(:first-child) {
-                margin-left: 35px;
+            justify-content: space-between;
+            .logo {
+                &-title {
+                    @include logo_title;
+                    color: $color-primary;
+                    margin-bottom: 10px;
+                }
+                &-subtitle {
+                    @include logo_subtitle;
+                    color: $color-light-xl;
+
+                    text-align: center;
+                }
             }
-            a {
-                padding: 4px 0px;
-                color: $color-dark-s;
-                text-decoration: none;
-                &:hover {
-                    color: $color-light-s;
+            nav ul {
+                list-style: none;
+                display: flex;
+                li:not(:first-child) {
+                    margin-left: 35px;
                 }
-                &.current:link,
-                &.current:visited {
-                    border-bottom: 3px solid $color-primary;
+                a {
+                    padding: 4px 0px;
+                    color: $color-dark-s;
+                    text-decoration: none;
+                    &:hover {
+                        color: $color-light-s;
+                    }
+                    &.current:link,
+                    &.current:visited {
+                        border-bottom: 3px solid $color-primary;
+                    }
                 }
+            }
+        }
+        .start_screen-content {
+            margin: 60px 0px 0px;
+            display: flex;
+            &-text {
+                margin-top: 163px;
+                h2 {
+                    width: 310px;
+                    margin-right: 150px;
+                }
+                p {
+                    @include paragraph-l;
+                    color: $color-dark-s;
+                    margin: 42px 0px;
+                }
+                button {
+                    @include button_primary;
+                }
+            }
+            img {
+                margin-left: 42px;
             }
         }
     }
-    .start_screen-content {
-        margin: 60px 0px 0px;
-        display: flex;
-        &-text {
-            margin-top: 163px;
-            h2 {
-                width: 310px;
-                margin-right: 150px;
-            }
-            p {
-                @include paragraph-l;
-                color: $color-dark-s;
-                margin: 42px 0px;
-            }
-            button {
-                @include button_primary;
-            }
-        }
-        img {
-            margin-left: 42px;
-        }
-    }
+
 }
 
 .about {
     background-color: $color-light-xl;
-    padding: 80px 40px 100px;
-    display: flex;
-    justify-content: center;
-    img {
-        margin-left: 175px;
-    }
-    &-text {
-        margin-top: 14px;
-        margin-left: 120px;
-        margin-right: 175px;
-        h3 {
-            margin-right: 30px;
-            color: $color-dark-l;
+    .section_content_wraper {
+        padding: 80px 40px 100px;
+        display: flex;
+        justify-content: center;
+        img {
+            margin-left: 175px;
         }
-        p {
-            @include paragraph-l;
-            color: $color-dark-xl;
-            margin-top: 25px;
+        .about-text {
+            margin-top: 14px;
+            margin-left: 120px;
+            margin-right: 175px;
+            h3 {
+                margin-right: 30px;
+                color: $color-dark-l;
+            }
+            p {
+                @include paragraph-l;
+                color: $color-dark-xl;
+                margin-top: 25px;
+            }
         }
     }
 }
 
 .pets {
-    padding: 80px 40px 100px;
     background-color: $color-light-l;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 60px;
-    h3 {
-        width: 400px;
-        color: $color-dark-l;
-        text-align: center;
-    }
-    button {
-        @include button_primary;
-    }
-    .pet-slider {
-        width: 100%;
+    .section_content_wraper {
+        padding: 80px 40px 100px;
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        button.arrow {
-            @include button_arrow;
+        row-gap: 60px;
+        h3 {
+            width: 400px;
+            color: $color-dark-l;
+            text-align: center;
         }
-        .cards_wraper {
+        button {
+            @include button_primary;
+        }
+        .pet-slider {
+            width: 100%;
             display: flex;
-            column-gap: 90px;
-            .pet_card {
-               @include pet_card;
+            align-items: center;
+            justify-content: space-between;
+            button.arrow {
+                @include button_arrow;
+            }
+            .cards_wraper {
+                display: flex;
+                column-gap: 90px;
+                .pet_card {
+                   @include pet_card;
+                }
             }
         }
     }
 }
 
 .help {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: $color-light-xl;
-    padding: 80px 40px 100px;
-    h3 {
-        color: $color-dark-l;
-        text-align: center;
-        width: 310px;
-    }
-    .helps_list {
-        margin-top: 60px;
+    .section_content_wraper {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 55px;
-        column-gap: 120px;
-        &-item {
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 40px 100px;
+        h3 {
             color: $color-dark-l;
+            text-align: center;
+            width: 310px;
+        }
+        .helps_list {
+            margin-top: 60px;
             display: flex;
-            flex-direction: column;
-            align-content: center;
-            h4 {
-                text-align: center;
-            }
-            img {
-                height: 60px;
-                margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 55px;
+            column-gap: 120px;
+            &-item {
+                color: $color-dark-l;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                h4 {
+                    text-align: center;
+                }
+                img {
+                    height: 60px;
+                    margin-bottom: 30px;
+                }
             }
         }
     }
@@ -163,40 +172,42 @@
 
 .donation {
     background-color: $color-light-l;
-    padding: 80px 0px 100px;
-    &-wrap {
-        width: 915px;
-        margin: 0px auto 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        column-gap: 30px;
-        &-text {
+    .section_content_wraper {
+        padding: 80px 0px 100px;
+        .donation-wrap {
+            width: 915px;
+            margin: 0px auto 0px;
             display: flex;
-            flex-direction: column;
-            align-items: start;
-            row-gap: 20px;
-            color: $color-dark-l;
-            p {
-                color: $color-dark-m;
-                font-family: Arial;
-                font-size: 12px;
-                font-style: italic;
-                font-weight: 400;
-                line-height: 18px;
-                letter-spacing: 0px;
-                text-align: left;
-            }
-            &-credit_card {
-                color: $color-dark-3xl;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            &-text {
                 display: flex;
-                column-gap: 15px;
-                padding: 10px 15px;
-                background-color: $color-primary;
-                border-radius: 9px;
-                cursor: pointer;
-                &:hover {
-                    background-color: $color-primary-light;
+                flex-direction: column;
+                align-items: start;
+                row-gap: 20px;
+                color: $color-dark-l;
+                p {
+                    color: $color-dark-m;
+                    font-family: Arial;
+                    font-size: 12px;
+                    font-style: italic;
+                    font-weight: 400;
+                    line-height: 18px;
+                    letter-spacing: 0px;
+                    text-align: left;
+                }
+                &-credit_card {
+                    color: $color-dark-3xl;
+                    display: flex;
+                    column-gap: 15px;
+                    padding: 10px 15px;
+                    background-color: $color-primary;
+                    border-radius: 9px;
+                    cursor: pointer;
+                    &:hover {
+                        background-color: $color-primary-light;
+                    }
                 }
             }
         }
@@ -208,38 +219,39 @@ footer {
         radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
             /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
         #211f20;
-    // background: url(../../assets/images/footer-background.png);
-    padding: 40px 40px 0px;
-    display: flex;
-    column-gap: 155px;
-    h3 {
-        color: $color-light-xl;
-    }
-    h4 {
-        color: $color-primary;
-    }
-    .contacts {
-        width: 500px;
-    }
-    .contacts,
-    .locations {
+    .section_content_wraper {
+        padding: 40px 40px 0px;
         display: flex;
-        flex-direction: column;
-        margin-top: 16px;
-        row-gap: 40px;
-    }
+        column-gap: 155px;
+        h3 {
+            color: $color-light-xl;
+        }
+        h4 {
+            color: $color-primary;
+        }
+        .contacts {
+            width: 500px;
+        }
+        .contacts,
+        .locations {
+            display: flex;
+            flex-direction: column;
+            margin-top: 16px;
+            row-gap: 40px;
+        }
 
-    .locations {
-        row-gap: 33px;
-    }
-    .mail,
-    .phone,
-    .locations-item {
-        display: flex;
-        align-items: center;
-        column-gap: 20px;
-    }
-    .locations-item {
-        font-style: normal;
+        .locations {
+            row-gap: 33px;
+        }
+        .mail,
+        .phone,
+        .locations-item {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+        }
+        .locations-item {
+            font-style: normal;
+        }
     }
 }
