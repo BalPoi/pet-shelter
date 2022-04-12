@@ -1,2 +1,12 @@
-// @import url('../../assets/fonts/arial/*.ttf');
-// @import url('../../assets/fonts/georgia/*.ttf');
+@font-face {
+    font-family: "Georgia";
+    src: url(./assets/fonts/georgia.ttf);
+  }
+  @font-face {
+    font-family: "Georgia Bold";
+    src: url(./assets/fonts/georgia_bolditalic.ttf);
+  }
+  @font-face {
+    font-family: "Arial";
+    src: url(./assets/fonts/arial.ttf);
+  }

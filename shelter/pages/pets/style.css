@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Georgia";
+  src: url(./assets/fonts/georgia.ttf);
+}
+
+@font-face {
+  font-family: "Georgia Bold";
+  src: url(./assets/fonts/georgia_bolditalic.ttf);
+}
+
+@font-face {
+  font-family: "Arial";
+  src: url(./assets/fonts/arial.ttf);
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,6 +24,11 @@ html {
 *::before {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -242,6 +262,7 @@ section.pets .cards_container .pet_card button {
 
 section.pets .cards_container .pet_card button:hover {
   background-color: #fddcc4;
+  border-color: #fddcc4;
 }
 
 section.pets .cards_container .pet_card:hover button {
