@@ -1,0 +1,347 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 57px;
+  color: #ffffff;
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+h5 {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #545454;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #292929;
+}
+
+a.current:link, a.current:visited {
+  border-bottom: 3px solid #f1cdb3;
+}
+
+ul {
+  padding: 0;
+}
+
+main {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  padding: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+}
+
+header .logo-title {
+  font-family: Georgia;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #545454;
+  margin-bottom: 10px;
+}
+
+header .logo-subtitle {
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #292929;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
+}
+
+header nav ul a {
+  padding: 4px 0px;
+  color: #545454;
+  text-decoration: none;
+}
+
+header nav ul a:hover {
+  color: #292929;
+}
+
+header nav ul a.current:link, header nav ul a.current:visited {
+  border-bottom: 3px solid #f1cdb3;
+}
+
+section.pets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 80px 40px 100px;
+  background-color: #f6f6f6;
+  row-gap: 45px;
+}
+
+section.pets h3 {
+  text-align: center;
+  color: #545454;
+}
+
+section.pets .cards_container {
+  padding: 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+}
+
+section.pets .cards_container .pet_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 9px;
+  row-gap: 30px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+section.pets .cards_container .pet_card img {
+  border-radius: 9px 9px 0 0;
+  width: 270px;
+  height: 270px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+section.pets .cards_container .pet_card .pet_name {
+  font-family: Georgia;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #545454;
+}
+
+section.pets .cards_container .pet_card button {
+  padding: 15px 45px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Georgia;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: #292929;
+  border: 2px solid #f1cdb3;
+  background-color: rgba(0, 0, 0, 0);
+  margin-bottom: 30px;
+  height: 52px;
+}
+
+section.pets .cards_container .pet_card button:hover {
+  background-color: #fddcc4;
+}
+
+section.pets .cards_container .pet_card:hover button {
+  background-color: #fddcc4;
+}
+
+section.pets .navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+section.pets .navigator button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+section.pets .navigator button:hover {
+  background-color: #f1cdb3;
+}
+
+section.pets .navigator button:disabled {
+  color: #cdcdcd;
+  border-color: #cdcdcd;
+  pointer-events: none;
+}
+
+section.pets .navigator button.current {
+  background-color: #f1cdb3;
+}
+
+footer {
+  background: url(../../assets/images/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
+  padding: 40px 40px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 155px;
+          column-gap: 155px;
+}
+
+footer h3 {
+  color: #ffffff;
+}
+
+footer h4 {
+  color: #f1cdb3;
+}
+
+footer .contacts {
+  width: 500px;
+}
+
+footer .contacts,
+footer .locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 16px;
+  row-gap: 40px;
+}
+
+footer .locations {
+  row-gap: 33px;
+}
+
+footer .mail,
+footer .phone,
+footer .locations-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+footer .locations-item {
+  font-style: normal;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,131 @@
+@mixin paragraph-l {
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@mixin paragraph-s {
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+@mixin logo_title {
+    font-family: Georgia;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+@mixin logo_subtitle {
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+@mixin button_text {
+    display: flex;
+    align-items: center;
+    font-family: Georgia;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    color: $color-dark-3xl;
+}
+
+@mixin button_primary {
+    padding: 15px 45px;
+    background: $color-primary;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    @include button_text;
+    &:hover {
+        background-color: $color-primary-light;
+    }
+}
+
+@mixin button_secondary {
+    padding: 15px 45px;
+    border-radius: 100px;
+    cursor: pointer;
+    @include button_text;
+    border: 2px solid #f1cdb3;
+    background-color: rgba(0,0,0,0);
+    &:hover {
+        background-color: $color-primary-light;
+    }
+}
+
+@mixin button_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    width: 52px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    &:hover {
+        background-color: $color-primary;
+    }
+    &:disabled {
+        color: $color-dark-s;
+        border-color: $color-dark-s;
+        pointer-events: none;
+    }
+    &.current {
+        background-color: $color-primary;
+    }
+}
+
+@mixin pet_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 9px;
+    row-gap: 30px;
+    background-color: $color-light-s;
+    cursor: pointer;
+    img {
+        border-radius: 9px 9px 0 0;
+        width: 270px;
+        height: 270px;
+        object-fit: cover;
+    }
+    .pet_name {
+        font-family: Georgia;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: $color-dark-l;
+    }
+    button {
+        @include button_secondary;
+        margin-bottom: 30px;
+        height: 52px;
+    }
+    &:hover {
+        button {
+            background-color: $color-primary-light;
+        }
+    }
+}
