@@ -449,12 +449,11 @@ ul {
 }
 
 .pets .section_content_wraper .pet-slider .cards_wraper .pet_card:hover {
-  box-shadow: 9px 10px 39px -14px rgba(0, 0, 0, 0.76);
-  -webkit-box-shadow: 9px 10px 39px -14px rgba(0, 0, 0, 0.76);
-  -moz-box-shadow: 9px 10px 39px -14px rgba(0, 0, 0, 0.76);
+  background-color: #ffffff;
 }
 
 .pets .section_content_wraper .pet-slider .cards_wraper .pet_card:hover button {
+  border: none;
   background-color: #fddcc4;
 }
 
