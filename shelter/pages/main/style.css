@@ -202,6 +202,8 @@ ul {
 }
 
 .start_screen .section_content_wraper .start_screen-content-text button {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   padding: 15px 45px;
   background: #f1cdb3;
   border-radius: 100px;
@@ -296,6 +298,8 @@ ul {
 }
 
 .pets .section_content_wraper button {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   padding: 15px 45px;
   background: #f1cdb3;
   border-radius: 100px;
@@ -334,6 +338,8 @@ ul {
 }
 
 .pets .section_content_wraper .pet-slider button.arrow {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -375,6 +381,8 @@ ul {
 }
 
 .pets .section_content_wraper .pet-slider .cards_wraper .pet_card {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -410,6 +418,8 @@ ul {
 }
 
 .pets .section_content_wraper .pet-slider .cards_wraper .pet_card button {
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   padding: 15px 45px;
   border-radius: 100px;
   cursor: pointer;
@@ -437,7 +447,12 @@ ul {
   border-color: #fddcc4;
 }
 
+.pets .section_content_wraper .pet-slider .cards_wraper .pet_card:hover {
+  background-color: #ffffff;
+}
+
 .pets .section_content_wraper .pet-slider .cards_wraper .pet_card:hover button {
+  border: none;
   background-color: #fddcc4;
 }
 
