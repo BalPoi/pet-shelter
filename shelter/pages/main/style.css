@@ -369,6 +369,7 @@ ul {
 }
 
 .pets .section_content_wraper .pet-slider button.arrow.current {
+  pointer-events: none;
   background-color: #f1cdb3;
 }
 
