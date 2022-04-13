@@ -325,6 +325,7 @@ section.pets .section_content_wraper .navigator button:disabled {
 }
 
 section.pets .section_content_wraper .navigator button.current {
+  pointer-events: none;
   background-color: #f1cdb3;
 }
 
