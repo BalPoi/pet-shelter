@@ -158,10 +158,8 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.start_screen .section_content_wraper header nav ul li:not(:first-child) {
-  margin-left: 35px;
+  -webkit-column-gap: 35px;
+          column-gap: 35px;
 }
 
 .start_screen .section_content_wraper header nav ul a {

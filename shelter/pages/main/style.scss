@@ -30,9 +30,7 @@
             nav ul {
                 list-style: none;
                 display: flex;
-                li:not(:first-child) {
-                    margin-left: 35px;
-                }
+                column-gap: 35px;
                 a {
                     padding: 4px 0px;
                     color: $color-dark-s;
