@@ -128,14 +128,18 @@ header .section_content_wraper {
 }
 
 header .section_content_wraper .logo-title {
+  color: #545454;
+  margin-bottom: 10px;
+}
+
+header .section_content_wraper .logo-title h1 {
   font-family: Georgia;
   font-size: 32px;
   font-weight: 400;
   line-height: 35px;
   letter-spacing: 0.06em;
   text-align: left;
-  color: #545454;
-  margin-bottom: 10px;
+  margin: 0;
 }
 
 header .section_content_wraper .logo-subtitle {
