@@ -489,6 +489,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 80px 40px 100px;
+  row-gap: 60px;
 }
 
 .help .section_content_wraper h3 {
@@ -498,7 +499,6 @@ ul {
 }
 
 .help .section_content_wraper .helps_list {
-  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,6 +728,23 @@ footer .section_content_wraper .locations-item {
   }
   .pets .section_content_wraper .pet-slider .cards_wraper .pet_card:last-child {
     display: none;
+  }
+  .help .section_content_wraper {
+    padding: 80px 69px 100px;
+  }
+  .help .section_content_wraper .helps_list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    -webkit-column-gap: 60px;
+            column-gap: 60px;
+    row-gap: 55px;
+  }
+  .help .section_content_wraper .helps_list-item {
+    width: 170px;
   }
 }
 /*# sourceMappingURL=style.css.map */

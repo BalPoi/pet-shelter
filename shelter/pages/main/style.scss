@@ -139,13 +139,13 @@
         flex-direction: column;
         align-items: center;
         padding: 80px 40px 100px;
+        row-gap: 60px;
         h3 {
             color: $color-dark-l;
             text-align: center;
             width: 310px;
         }
         .helps_list {
-            margin-top: 60px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -310,5 +310,20 @@ footer {
             }
         }
     }
-
+    .help {
+        .section_content_wraper {
+            padding: 80px 69px 100px;
+            .helps_list {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                column-gap: 60px;
+                // TODO: responsive!
+                row-gap: 55px;
+                &-item {
+                    width: 170px;
+                }
+            }
+        }
+    }
 }
