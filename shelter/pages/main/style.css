@@ -760,10 +760,48 @@ footer .section_content_wraper .locations-item {
   .donation .section_content_wraper .donation-wrap-text {
     width: 380px;
   }
+  .donation .section_content_wraper .donation-wrap-text h4 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
   .donation .section_content_wraper .donation-wrap img {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  footer .section_content_wraper {
+    padding: 30px 30px 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 65px;
+  }
+  footer .section_content_wraper .footer-content {
+    padding: 0px 34px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 60px;
+            column-gap: 60px;
+  }
+  footer .section_content_wraper .footer-content .contacts {
+    margin: 0;
+    width: auto;
+  }
+  footer .section_content_wraper .footer-content .contacts h3 {
+    width: 280px;
+  }
+  footer .section_content_wraper .footer-content .locations {
+    margin: 0;
+    width: auto;
+  }
+  footer .section_content_wraper .footer-content .locations h3 {
+    width: 270px;
   }
 }
 /*# sourceMappingURL=style.css.map */
