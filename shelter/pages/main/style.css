@@ -346,9 +346,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 53px;
+          column-gap: 53px;
 }
 
 .pets .section_content_wraper .pet-slider button.arrow {
@@ -712,6 +714,20 @@ footer .section_content_wraper .locations-item {
         -ms-flex-order: 2;
             order: 2;
     margin: 0;
+  }
+  .pets .section_content_wraper {
+    padding: 80px 30px 100px;
+  }
+  .pets .section_content_wraper .pet-slider {
+    -webkit-column-gap: 12px;
+            column-gap: 12px;
+  }
+  .pets .section_content_wraper .pet-slider .cards_wraper {
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+  }
+  .pets .section_content_wraper .pet-slider .cards_wraper .pet_card:last-child {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

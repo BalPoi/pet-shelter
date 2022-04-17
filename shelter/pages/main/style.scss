@@ -70,7 +70,6 @@
     }
 
 }
-
 .about {
     background-color: $color-light-xl;
     .section_content_wraper {
@@ -98,7 +97,6 @@
         }
     }
 }
-
 .pets {
     background-color: $color-light-l;
     .section_content_wraper {
@@ -119,7 +117,8 @@
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
+            column-gap: 53px;
             button.arrow {
                 @include button_arrow;
             }
@@ -133,7 +132,6 @@
         }
     }
 }
-
 .help {
     background-color: $color-light-xl;
     .section_content_wraper {
@@ -169,7 +167,6 @@
         }
     }
 }
-
 .donation {
     background-color: $color-light-l;
     .section_content_wraper {
@@ -213,7 +210,6 @@
         }
     }
 }
-
 footer {
     background: url(../../assets/images/noise_transparent@2x.png),
         radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
@@ -300,6 +296,19 @@ footer {
             }
         }
     }
-
+    .pets {
+        .section_content_wraper {
+            padding: 80px 30px 100px;
+            .pet-slider {
+                column-gap: 12px;
+                .cards_wraper {
+                    column-gap: 40px;
+                    .pet_card:last-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 
 }
