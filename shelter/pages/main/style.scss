@@ -81,17 +81,19 @@
             margin-left: 175px;
         }
         .about-text {
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
             margin-top: 14px;
             margin-left: 120px;
             margin-right: 175px;
             h3 {
-                margin-right: 30px;
+                width: 370px;
                 color: $color-dark-l;
             }
             p {
                 @include paragraph-l;
                 color: $color-dark-xl;
-                margin-top: 25px;
             }
         }
     }
@@ -266,11 +268,9 @@ footer {
                 align-items: center;
                 row-gap: 100px;
                 &-text {
-                    margin-top: 0px;
-                    width: 460px;
-                    // TODO: responsive text box
-                    // min-width: 460px;
-                    // max-width: 575px;
+                    margin: 0px 154px;
+                    min-width: 460px;
+                    max-width: 575px;
                     h2 {
                         width: 310px;
                     }
@@ -285,5 +285,21 @@ footer {
             }
         }
     }
-    
+    .about {
+        .section_content_wraper {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 80px;
+            .about-text {
+                min-width: 430px;
+                margin: 0px 169px;
+            }
+            img {
+                order: 2;
+                margin: 0;
+            }
+        }
+    }
+
+
 }
