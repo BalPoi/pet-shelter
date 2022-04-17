@@ -9,6 +9,7 @@
         radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%)
             /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
         #211f20;
+        width: 100%;
     .section_content_wraper {
         padding: 60px 40px 0px;
         header {
@@ -48,23 +49,22 @@
         .start_screen-content {
             margin: 60px 0px 0px;
             display: flex;
+            column-gap: 42px;
             &-text {
                 margin-top: 163px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 42px;
                 h2 {
                     width: 310px;
-                    margin-right: 150px;
                 }
                 p {
                     @include paragraph-l;
                     color: $color-dark-s;
-                    margin: 42px 0px;
                 }
                 button {
                     @include button_primary;
                 }
-            }
-            img {
-                margin-left: 42px;
             }
         }
     }
@@ -252,4 +252,38 @@ footer {
             font-style: normal;
         }
     }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .section_content_wraper {
+        width: auto;
+    }
+    .start_screen {
+        .section_content_wraper {
+            padding: 30px 30px 0px;
+            .start_screen-content {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 100px;
+                &-text {
+                    margin-top: 0px;
+                    width: 460px;
+                    // TODO: responsive text box
+                    // min-width: 460px;
+                    // max-width: 575px;
+                    h2 {
+                        width: 310px;
+                    }
+                    a {
+                        align-self: center;
+                    }
+                }
+                img {
+                    width: 569px;
+                    align-self: flex-end;
+                }
+            }
+        }
+    }
+    
 }
