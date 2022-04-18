@@ -218,36 +218,47 @@ footer {
     .section_content_wraper {
         padding: 40px 40px 0px;
         display: flex;
-        column-gap: 155px;
-        h3 {
-            color: $color-light-xl;
-        }
-        h4 {
-            color: $color-primary;
-        }
-        .contacts {
-            width: 500px;
-        }
-        .contacts,
-        .locations {
+        column-gap: 160px;
+        .footer-content {
             display: flex;
-            flex-direction: column;
-            margin-top: 16px;
-            row-gap: 40px;
-        }
+            column-gap: 158px;
+            h3 {
+                color: $color-light-xl;
+            }
+            h4 {
+                color: $color-primary;
+            }
+            .contacts {
+                // width: 500px;
+                h3 {
+                    width: 280px;
+                }
+            }
+            .contacts,
+            .locations {
+                display: flex;
+                flex-direction: column;
+                margin-top: 16px;
+                row-gap: 40px;
+            }
 
-        .locations {
-            row-gap: 33px;
-        }
-        .mail,
-        .phone,
-        .locations-item {
-            display: flex;
-            align-items: center;
-            column-gap: 20px;
-        }
-        .locations-item {
-            font-style: normal;
+            .locations {
+                width: 302px;
+                row-gap: 33px;
+                h3 {
+                    width: 270px;
+                }
+            }
+            .mail,
+            .phone,
+            .locations-item {
+                display: flex;
+                align-items: center;
+                column-gap: 20px;
+            }
+            .locations-item {
+                font-style: normal;
+            }
         }
     }
 }
@@ -318,7 +329,7 @@ footer {
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
                 column-gap: 60px;
-                // TODO: responsive!
+                // TODO: 3x3 responsive!
                 row-gap: 55px;
                 &-item {
                     width: 170px;
