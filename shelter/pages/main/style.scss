@@ -195,7 +195,7 @@
                     text-align: left;
                 }
                 &-credit_card {
-                    color: $color-dark-3xl;
+                    color: $color-dark-l;
                     display: flex;
                     column-gap: 15px;
                     padding: 10px 15px;
@@ -381,6 +381,227 @@ footer {
                         width: 270px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .section_content_wraper {
+        width: auto;
+    }
+    .start_screen {
+        .section_content_wraper {
+            padding: 30px 10px 0px;
+            header {
+                nav ul {
+                    display: none;
+                    // list-style: none;
+                    // display: flex;
+                    // column-gap: 35px;
+                    // a {
+                    //     padding: 4px 0px;
+                    //     color: $color-dark-s;
+                    //     text-decoration: none;
+                    //     &:hover {
+                    //         color: $color-light-s;
+                    //     }
+                    //     &.current:link,
+                    //     &.current:visited {
+                    //         border-bottom: 3px solid $color-primary;
+                    //     }
+                    // }
+                }
+            }
+            .start_screen-content {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 105px;
+                &-text {
+                    margin-top: 0px;
+                    align-items: center;
+                    h2 {
+                        width: auto;
+                        @include h3-mobile;
+                    }
+                    p {
+                        text-align: center;
+                    }
+                    button {
+                        @include button_primary;
+                    }
+                }
+            }
+            img {
+                width: 260px;
+                align-self: flex-end;
+            }
+        }
+    }
+    .about {
+        .section_content_wraper {
+            padding: 43px 25px 42px;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 41px;
+            img {
+                margin: 0px;
+                width: 260px;
+                order: 2;
+            }
+            .about-text {
+                row-gap: 0px;
+                margin: 0px;
+                h3 {
+                    width: auto;
+                    @include h3-mobile;
+                    margin-bottom: 25px;
+                }
+                p+p {
+                    @include paragraph-l;
+                    margin-top: 22px;
+                }
+            }
+        }
+    }
+    .pets {
+        .section_content_wraper {
+            padding: 42px 10px;
+            row-gap: 42px;
+            h3 {
+                width: auto;
+                @include h3-mobile;
+                // margin: 0px 26px;
+                FIXME: responsive for h3
+            }
+            .pet-slider {
+                width: 270px;
+                margin: 0px 15px;
+                column-gap: 80px;
+                row-gap: 20px;
+                flex-wrap: wrap;
+                button.arrow {
+                    @include button_arrow;
+                    order: 5;
+                }
+                .cards_wraper {
+                    column-gap: 0px;
+                    .pet_card:not(:first-child) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .help {
+        .section_content_wraper {
+            padding: 42px 15px;
+            row-gap: 42px;
+            h3 {
+                margin: 0px 30px;
+                @include h3-mobile;
+                width: auto;
+            }
+            .helps_list {
+                width: 290px;
+                row-gap: 30px;
+                column-gap: 30px;
+                justify-content: start;
+                &-item {
+                    h4 {
+                        font-size: 15px;
+                        line-height: 17px;
+                    }
+                    width: 130px;
+                    justify-content: start;
+                    img {
+                        height: 50px;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .donation {
+        .section_content_wraper {
+            padding: 42px 19px;
+            .donation-wrap {
+                width: auto;
+                margin: 0px;
+                justify-content: flex-start;
+                flex-direction: column;
+                row-gap: 42px;
+                &-text {
+                    align-items: center;
+                    h3 {
+                        @include h3-mobile;
+                        margin: 0px 30px;
+                    }
+                    h5 {
+                        text-align: center;
+                        line-height: 24px;
+                        font-size: 13.3px;
+                    }
+                    p {
+                        text-align: justify;
+                    }
+                    &-credit_card {
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        h4 {
+                            font-size: 15px;
+                            line-height: 16.5px;
+                        }
+                    }
+                }
+                img[alt="donation-dog"] {
+                    order: 2;
+                    width: 260px;
+                }
+            }
+        }
+    }
+    footer {
+        .section_content_wraper {
+            padding: 30px 10px 0px;
+            row-gap: 40px;
+            flex-direction: column;
+            align-items: center;
+            .footer-content {
+                flex-direction: column;
+                align-items: center;
+                row-gap: 40px;
+                h3 {
+                    @include h3-mobile;
+                }
+                h4 {
+                }
+                .contacts {
+                    margin: 0px;
+                    align-items: center;
+                    h3 {
+                        width: auto;
+                        margin: 0px 21px;
+                    }
+                }
+                .contacts,
+                .locations {
+                    margin: 0;
+                    row-gap: 40px;
+                }
+
+                .locations {
+                    width: auto;
+                    h3 {
+                        width: auto;
+                        margin: 0px 25px;
+                        align-self: center;
+                    }
+                }
+            }
+            img[alt="footer-puppy"] {
+                width: 260px;
             }
         }
     }
