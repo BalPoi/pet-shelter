@@ -12,38 +12,31 @@
     <main>
       <header>
         <div class="section_content_wraper">
-          <a href="../main/index.html">
-            <div class="logo">
+          <a class="logo" href="../main/index.html">
               <div class="logo-title">
                 <h1>Cozy House</h1>
               </div>
               <div class="logo-subtitle">Shelter for pets in Boston</div>
-            </div>
           </a>
 
-          <div class="burger-menu">
-            <input id="menu-toggle" type="checkbox" />
-            <label class="menu-btn" for="menu-toggle">
-              <span></span>
-            </label>
-            <nav>
+          <nav class="header-menu">
+            <input type="checkbox" name="menu-toggle" id="menu-toggle">
+            <label class="burger-btn" for="menu-toggle"><span></span></label>
+            <div class="side-menu">
+              <a class="logo" href="#">
+                <div class="logo-title">
+                  <h1>Cozy House</h1>
+                </div>
+                <div class="logo-subtitle">Shelter for pets in Boston</div>
+               </a>
               <ul class="menubox">
-                <li><a href="../main/index.html">About the shelter</a></li>
-                <li><a href="" class="current">Our pets</a></li>
-                <li><a href="../main/index.html#help">Help the shelter</a></li>
+                <li><a href="">About the shelter</a></li>
+                <li><a class="current" href="../pets/index.html">Our pets</a></li>
+                <li><a href="#help">Help the shelter</a></li>
                 <li><a href="#contacts">Contacts</a></li>
               </ul>
-            </nav>
-          </div>
-
-          <!-- <nav>
-            <ul>
-              <li><a href="../main/index.html">About the shelter</a></li>
-              <li><a href="" class="current">Our pets</a></li>
-              <li><a href="../main/index.html#help">Help the shelter</a></li>
-              <li><a href="#contacts">Contacts</a></li>
-            </ul>
-          </nav> -->
+            </div>
+          </nav>
         </div>
       </header>
       <section class="pets">
