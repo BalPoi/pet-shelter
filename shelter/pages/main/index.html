@@ -7,7 +7,7 @@
     <title>Cozy House</title>
     <link rel="stylesheet" href="/shelter/SCSS/normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
   </head>
 
   <body>
@@ -15,21 +15,29 @@
       <section class="start_screen">
         <div class="section_content_wraper">
           <header>
-            <a href="#">
-              <div class="logo">
+            <a class="logo" href="#">
                 <div class="logo-title">
                   <h1>Cozy House</h1>
                 </div>
                 <div class="logo-subtitle">Shelter for pets in Boston</div>
-              </div>
             </a>
-            <nav>
-              <ul>
-                <li><a href="" class="current">About the shelter</a></li>
-                <li><a href="../pets/index.html">Our pets</a></li>
-                <li><a href="#help">Help the shelter</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-              </ul>
+            <nav class="header-menu">
+              <input type="checkbox" name="menu-toggle" id="menu-toggle">
+              <label class="burger-btn" for="menu-toggle"><span></span></label>
+              <div class="side-menu">
+                <a class="logo" href="#">
+                  <div class="logo-title">
+                    <h1>Cozy House</h1>
+                  </div>
+                  <div class="logo-subtitle">Shelter for pets in Boston</div>
+                 </a>
+                <ul class="menubox">
+                  <li><a href="" class="current">About the shelter</a></li>
+                  <li><a href="../pets/index.html">Our pets</a></li>
+                  <li><a href="#help">Help the shelter</a></li>
+                  <li><a href="#contacts">Contacts</a></li>
+                </ul>
+              </div>
             </nav>
           </header>
           <div class="start_screen-content">
