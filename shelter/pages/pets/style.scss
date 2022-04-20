@@ -4,117 +4,366 @@
 @import "../../SCSS/common";
 
 header {
-    background-color: $color-light-xl;
-    position: sticky;
-    top: 0px;
-    .section_content_wraper {
-        padding: 30px 40px;
-        display: flex;
-        justify-content: space-between;
-        .logo {
-            &-title {
-                @include logo_title;
-                color: $color-dark-l;
-                margin-bottom: 10px;
-            }
-            &-subtitle {
-                @include logo_subtitle;
-                color: $color-dark-3xl;
+  background-color: $color-light-xl;
+  position: sticky;
+  top: 0px;
+  .section_content_wraper {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      &-title {
+        @include logo_title;
+        color: $color-dark-l;
+        margin-bottom: 10px;
+      }
+      &-subtitle {
+        @include logo_subtitle;
+        color: $color-dark-3xl;
 
-                text-align: center;
-            }
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            column-gap: 35px;
-            a {
-                padding: 4px 0px;
-                color: $color-dark-l;
-                text-decoration: none;
-                &:hover {
-                    color: $color-dark-3xl;
-                }
-                &.current:link,
-                &.current:visited {
-                    border-bottom: 3px solid $color-primary;
-                }
-            }
-        }
+        text-align: center;
+      }
     }
-}
 
-section.pets {
-    background-color: $color-light-l;
-    .section_content_wraper {
+    nav {
+      #menu-toggle {
+        display: none;
+      }
+      .logo {
+        display: none;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        column-gap: 36px;
+        text-align: center;
+        a {
+          padding: 4px 0px;
+          color: $color-dark-l;
+          text-decoration: none;
+          &:hover {
+            color: $color-dark-3xl;
+          }
+          &.current:link,
+          &.current:visited {
+            border-bottom: 3px solid $color-primary;
+          }
+        }
+      }
+    }
+  }
+}
+.pets {
+  background-color: $color-light-l;
+  .section_content_wraper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 40px 100px;
+    row-gap: 45px;
+    h3 {
+      text-align: center;
+      color: $color-dark-l;
+    }
+    .cards_container {
+      padding: 15px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      row-gap: 30px;
+      column-gap: 40px;
+      .pet_card {
+        @include pet_card;
+      }
+    }
+    .navigator {
+      display: flex;
+      column-gap: 20px;
+      button {
+        @include button_arrow;
+      }
+    }
+  }
+}
+footer {
+  background: url(../../assets/images/noise_transparent@2x.png),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    #211f20;
+  .section_content_wraper {
+    padding: 40px 40px 0px;
+    display: flex;
+    column-gap: 160px;
+    .footer-content {
+      display: flex;
+      column-gap: 158px;
+      h3 {
+        color: $color-light-xl;
+      }
+      h4 {
+        color: $color-primary;
+      }
+      .contacts {
+        // width: 500px;
+        h3 {
+          width: 280px;
+        }
+      }
+      .contacts,
+      .locations {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding: 80px 40px 100px;
-        row-gap: 45px;
+        margin-top: 16px;
+        row-gap: 40px;
+      }
+
+      .locations {
+        width: 302px;
+        row-gap: 33px;
         h3 {
-            text-align: center;
-            color: $color-dark-l;
+          width: 270px;
         }
-        .cards_container {
-            padding: 15px 0px;
-            display: flex;
-            flex-wrap: wrap;
-            row-gap: 30px;
-            column-gap: 40px;
-            .pet_card {
-                @include pet_card;
-            }
-        }
-        .navigator {
-            display: flex;
-            column-gap: 20px;
-            button {
-                @include button_arrow;
-            }
-        }
+      }
+      .mail,
+      .phone,
+      .locations-item {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+      }
+      .locations-item {
+        font-style: normal;
+      }
     }
+  }
 }
 
-footer {
-    background: url(../../assets/images/noise_transparent@2x.png),
-        radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
-            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-        #211f20;
-    // background: url(../../assets/images/footer-background.png);
+@media (min-width: 768px) and (max-width: 1279px) {
+  .section_content_wraper {
+    width: auto;
+  }
+  header {
     .section_content_wraper {
-        padding: 40px 40px 0px;
+      padding: 30px;
+    }
+  }
+  .pets {
+    .section_content_wraper {
+      padding: 80px 30px 77px 30px;
+      row-gap: 0px;
+      max-width: 939px;
+      .cards_container {
+        max-height: 1365px;
+        overflow: hidden;
+        padding: 0px;
+        margin-top: 30px;
+        justify-content: center;
+      }
+      .navigator {
+        margin-top: 40px;
+      }
+    }
+  }
+  footer {
+    .section_content_wraper {
+      padding: 30px 30px 0px;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 65px;
+      .footer-content {
+        padding: 0px 34px;
         display: flex;
-        column-gap: 155px;
-        h3 {
-            color: $color-light-xl;
+        column-gap: 60px;
+
+        .contacts {
+          margin: 0;
+          width: auto;
+          h3 {
+            width: 280px;
+          }
         }
-        h4 {
-            color: $color-primary;
+        .locations {
+          margin: 0;
+          width: auto;
+          h3 {
+            width: 270px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .section_content_wraper {
+    width: auto;
+  }
+  header {
+    .section_content_wraper {
+      padding: 30px 10px;
+      .header-menu {
+        margin-right: 44px;
+        display: flex;
+        align-items: center;
+        .burger-btn {
+          display: flex;
+          align-items: center;
+          position: relative;
+          z-index: 10;
+          width: 30px;
+          height: 30px;
+          transition: .25s;
+          span,
+          span::before,
+          span::after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #000;
+            transition-duration: .25s;
+          }
+          span::before {
+            content: '';
+            top: -10px;
+          }
+          span::after {
+            content: '';
+            top: 10px;
+          }
+        }
+        .side-menu {
+          height: 110vh;
+          padding: 30px 0px;
+          .logo {
+            margin-top: 20px;
+            width: 186px;
+            display: flex;
+            flex-direction: column;
+            &-title {
+              @include logo_title;
+              color: $color-primary;
+              margin-bottom: 10px;
+            }
+            &-subtitle {
+              @include logo_subtitle;
+              color: $color-light-xl;
+
+              text-align: center;
+            }
+          }
+          .menubox {
+            margin: 158px 0px 0px;
+            column-gap: 0;
+            row-gap: 42px;
+            width: 300px;
+            a {
+              @include paragraph-mobile-menu;
+              padding: 0;
+              padding-bottom: 8px;
+              color: $color-dark-s;
+              text-decoration: none;
+              &:hover {
+                color: $color-light-s;
+              }
+              &.current:link,
+              &.current:visited {
+                border-bottom: 3px solid $color-primary;
+              }
+            }
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+          }
+          background-color: $color-dark-3xl;
+          position: absolute;
+          z-index: 5;
+          top: -20px;
+          right: 0px;
+          width: 0px;
+          overflow: hidden;
+          transition: .5s;
+        }
+        #menu-toggle {
+          display: none;
+          &:checked {
+            ~ .side-menu {
+              padding: 30px 10px;
+              width: 320px;
+            }
+            ~ .burger-btn {
+              transition: .25s;
+              transform: rotate(90deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .pets {
+    .section_content_wraper {
+      padding: 42px 0px;
+      row-gap: 42px;
+      h3 {
+        @include h3-mobile;
+      }
+      .cards_container {
+        padding: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        column-gap: 0;
+        .pet_card {
+          @include pet_card;
+          &:nth-child(n+4) {
+            display: none;
+          }
+        }
+      }
+      .navigator {
+        column-gap: 10px;
+        button {
+          @include button_arrow;
+        }
+      }
+    }
+  }
+  footer {
+    .section_content_wraper {
+      padding: 30px 10px 0px;
+      row-gap: 40px;
+      flex-direction: column;
+      align-items: center;
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+        h3 {
+          @include h3-mobile;
         }
         .contacts {
-            width: 500px;
+          margin: 0px;
+          align-items: center;
+          h3 {
+            width: auto;
+            margin: 0px 21px;
+          }
         }
         .contacts,
         .locations {
-            display: flex;
-            flex-direction: column;
-            margin-top: 16px;
-            row-gap: 40px;
+          margin: 0;
+          row-gap: 40px;
         }
 
         .locations {
-            row-gap: 33px;
+          width: auto;
+          h3 {
+            width: auto;
+            margin: 0px 25px;
+            align-self: center;
+          }
         }
-        .mail,
-        .phone,
-        .locations-item {
-            display: flex;
-            align-items: center;
-            column-gap: 20px;
-        }
-        .locations-item {
-            font-style: normal;
-        }
+      }
+      img[alt="footer-puppy"] {
+        width: 260px;
+      }
     }
+  }
 }
