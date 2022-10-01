@@ -4,17 +4,6 @@
 @import "../../SCSS/common";
 
 
-.blackout {
-  top: 0px;
-  left: 0px;
-  position: fixed;
-  visibility: hidden;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(41, 41, 41, 0);
-  z-index: 5;
-  transition-duration: 0.25s;
-}
 .start_screen {
   background: url(../../assets/images/noise_transparent@2x.png),
     radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%)

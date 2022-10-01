@@ -91,3 +91,15 @@ ul {
     width: 1280px;
     margin: 0 auto;
 }
+
+.blackout {
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(41, 41, 41, 0);
+    z-index: 5;
+    transition-duration: 0.25s;
+  }
