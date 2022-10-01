@@ -107,11 +107,12 @@ ul {
   top: 0px;
   left: 0px;
   position: fixed;
-  display: none;
+  visibility: hidden;
   width: 100vw;
-  height: 100%;
-  background-color: rgba(41, 41, 41, 0.6);
+  height: 100vh;
+  background-color: rgba(41, 41, 41, 0);
   z-index: 5;
+  transition-duration: 0.25s;
 }
 
 .start_screen {
@@ -742,7 +743,8 @@ footer .section_content_wraper .footer-content .locations-item {
     right: 53px;
   }
   .start_screen .section_content_wraper header .header-menu #menu-toggle:checked ~ .blackout {
-    display: block;
+    visibility: visible;
+    background-color: rgba(41, 41, 41, 0.6);
   }
   .start_screen .section_content_wraper .start_screen-content {
     flex-direction: column;
