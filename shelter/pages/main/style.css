@@ -103,6 +103,17 @@ ul {
   margin: 0 auto;
 }
 
+.blackout {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  display: none;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(41, 41, 41, 0.6);
+  z-index: 5;
+}
+
 .start_screen {
   background: url(../../assets/images/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
   width: 100%;
@@ -147,7 +158,7 @@ ul {
   list-style: none;
   display: flex;
   -moz-column-gap: 36px;
-       column-gap: 36px;
+  column-gap: 36px;
   text-align: center;
 }
 .start_screen .section_content_wraper header nav ul a {
@@ -165,7 +176,7 @@ ul {
   margin: 60px 0px 0px;
   display: flex;
   -moz-column-gap: 42px;
-       column-gap: 42px;
+  column-gap: 42px;
 }
 .start_screen .section_content_wraper .start_screen-content-text {
   margin-top: 163px;
@@ -278,7 +289,7 @@ ul {
   align-items: center;
   justify-content: center;
   -moz-column-gap: 53px;
-       column-gap: 53px;
+  column-gap: 53px;
 }
 .pets .section_content_wraper .pet-slider button.arrow {
   transition: 0.25s;
@@ -308,7 +319,7 @@ ul {
 .pets .section_content_wraper .pet-slider .cards_wraper {
   display: flex;
   -moz-column-gap: 90px;
-       column-gap: 90px;
+  column-gap: 90px;
 }
 .pets .section_content_wraper .pet-slider .cards_wraper .pet_card {
   transition: 0.25s;
@@ -386,7 +397,7 @@ ul {
   justify-content: center;
   row-gap: 55px;
   -moz-column-gap: 120px;
-       column-gap: 120px;
+  column-gap: 120px;
 }
 .help .section_content_wraper .helps_list-item {
   color: #545454;
@@ -415,7 +426,7 @@ ul {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 .donation .section_content_wraper .donation-wrap-text {
   display: flex;
@@ -441,7 +452,7 @@ ul {
   color: #545454;
   display: flex;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   padding: 10px 15px;
   background-color: #f1cdb3;
   border-radius: 9px;
@@ -458,12 +469,12 @@ footer .section_content_wraper {
   padding: 40px 40px 0px;
   display: flex;
   -moz-column-gap: 160px;
-       column-gap: 160px;
+  column-gap: 160px;
 }
 footer .section_content_wraper .footer-content {
   display: flex;
   -moz-column-gap: 158px;
-       column-gap: 158px;
+  column-gap: 158px;
 }
 footer .section_content_wraper .footer-content h3 {
   color: #ffffff;
@@ -494,7 +505,7 @@ footer .section_content_wraper .footer-content .locations-item {
   display: flex;
   align-items: center;
   -moz-column-gap: 20px;
-       column-gap: 20px;
+  column-gap: 20px;
 }
 footer .section_content_wraper .footer-content .locations-item {
   font-style: normal;
@@ -545,11 +556,11 @@ footer .section_content_wraper .footer-content .locations-item {
   }
   .pets .section_content_wraper .pet-slider {
     -moz-column-gap: 12px;
-         column-gap: 12px;
+    column-gap: 12px;
   }
   .pets .section_content_wraper .pet-slider .cards_wraper {
     -moz-column-gap: 40px;
-         column-gap: 40px;
+    column-gap: 40px;
   }
   .pets .section_content_wraper .pet-slider .cards_wraper .pet_card:last-child {
     display: none;
@@ -562,7 +573,7 @@ footer .section_content_wraper .footer-content .locations-item {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     -moz-column-gap: 60px;
-         column-gap: 60px;
+    column-gap: 60px;
     row-gap: 55px;
   }
   .help .section_content_wraper .helps_list-item {
@@ -593,7 +604,7 @@ footer .section_content_wraper .footer-content .locations-item {
     padding: 0px 34px;
     display: flex;
     -moz-column-gap: 60px;
-         column-gap: 60px;
+    column-gap: 60px;
   }
   footer .section_content_wraper .footer-content .contacts {
     margin: 0;
@@ -657,7 +668,7 @@ footer .section_content_wraper .footer-content .locations-item {
     position: fixed;
     right: 0px;
     top: 0px;
-    transition: 0.5s;
+    transition: 0.3s;
     width: 0px;
     z-index: 5;
   }
@@ -692,7 +703,7 @@ footer .section_content_wraper .footer-content .locations-item {
   .start_screen .section_content_wraper header .header-menu .side-menu .menubox {
     margin: 158px 0px 0px;
     -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
     row-gap: 40px;
     width: 300px;
     flex-direction: column;
@@ -729,6 +740,9 @@ footer .section_content_wraper .footer-content .locations-item {
     transform: rotate(90deg);
     position: fixed;
     right: 53px;
+  }
+  .start_screen .section_content_wraper header .header-menu #menu-toggle:checked ~ .blackout {
+    display: block;
   }
   .start_screen .section_content_wraper .start_screen-content {
     flex-direction: column;
@@ -827,7 +841,7 @@ footer .section_content_wraper .footer-content .locations-item {
     width: 270px;
     margin: 0px 15px;
     -moz-column-gap: 80px;
-         column-gap: 80px;
+    column-gap: 80px;
     row-gap: 20px;
     flex-wrap: wrap;
   }
@@ -859,7 +873,7 @@ footer .section_content_wraper .footer-content .locations-item {
   }
   .pets .section_content_wraper .pet-slider .cards_wraper {
     -moz-column-gap: 0px;
-         column-gap: 0px;
+    column-gap: 0px;
   }
   .pets .section_content_wraper .pet-slider .cards_wraper .pet_card:not(:first-child) {
     display: none;
@@ -882,7 +896,7 @@ footer .section_content_wraper .footer-content .locations-item {
     width: 290px;
     row-gap: 30px;
     -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
     justify-content: start;
   }
   .help .section_content_wraper .helps_list-item {

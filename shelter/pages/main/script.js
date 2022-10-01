@@ -1,3 +1,9 @@
-alert("Уважаемый проверяющий, просьба не делать крос-чек 19 апреля, а если будет возможность, то и 20 апреля.");
-alert("Осталось доделать 320px. Спасибо огрормное за понимание.");
-alert("Как только доделаю, эти сообщения перестанут всплывать. В случае чего, пишите мне в Discord.");
+function closeSideMenu() {
+  document.getElementById('menu-toggle').checked = false;
+}
+document
+  .querySelectorAll('.menubox li')
+  .forEach((item) => item.addEventListener('click', closeSideMenu));
+document
+  .querySelectorAll('.blackout')
+  .forEach((item) => item.addEventListener('click', closeSideMenu));
