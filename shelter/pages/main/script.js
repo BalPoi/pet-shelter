@@ -24,3 +24,23 @@ document
 document
   .querySelector('#menu-toggle')
   .addEventListener('change', scrollingController);
+
+async function petCarouselInit() {
+  const carousel = document.querySelector('.pet-slider > .cards_wrapper');
+  const prevBtn = document.querySelector('.pet-slider > .arrow.prev');
+  const nextBtn = document.querySelector('.pet-slider > .arrow.next');
+  const sliderLength = getComputedStyle(carousel).getPropertyValue('--slider-length');
+  const petsArray = await fetch('../../assets/pets.json').then((resp) => resp.json());
+
+  for (let i = 0; i < sliderLength; i++) {
+    carousel.innerHTML += `
+      <div class="pet_card">
+        <img src="${petsArray[i].img}" alt="${petsArray[i].name}" />
+        <div class="pet_name">${petsArray[i].name}</div>
+        <button>Learn more</button>
+      </div>
+    `;
+  }
+}
+
+petCarouselInit();

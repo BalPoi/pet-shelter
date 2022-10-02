@@ -8,7 +8,7 @@ header {
   background-color: $color-light-xl;
   position: sticky;
   top: 0px;
-  .section_content_wraper {
+  .section_content_wrapper {
     padding: 30px 40px;
     display: flex;
     justify-content: space-between;
@@ -56,7 +56,7 @@ header {
 }
 .pets {
   background-color: $color-light-l;
-  .section_content_wraper {
+  .section_content_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,7 +90,7 @@ footer {
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     #211f20;
-  .section_content_wraper {
+  .section_content_wrapper {
     padding: 40px 40px 0px;
     display: flex;
     column-gap: 160px;
@@ -139,16 +139,16 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-  .section_content_wraper {
+  .section_content_wrapper {
     width: auto;
   }
   header {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 30px;
     }
   }
   .pets {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 80px 30px 77px 30px;
       row-gap: 0px;
       max-width: 939px;
@@ -165,7 +165,7 @@ footer {
     }
   }
   footer {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 30px 30px 0px;
       flex-direction: column;
       align-items: center;
@@ -194,11 +194,11 @@ footer {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .section_content_wraper {
+  .section_content_wrapper {
     width: auto;
   }
   header {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 30px 10px;
       .header-menu {
         margin-right: 44px;
@@ -304,7 +304,7 @@ footer {
     }
   }
   .pets {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 42px 0px;
       row-gap: 42px;
       h3 {
@@ -331,7 +331,7 @@ footer {
     }
   }
   footer {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 30px 10px 0px;
       row-gap: 40px;
       flex-direction: column;

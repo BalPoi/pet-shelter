@@ -10,7 +10,7 @@
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     #211f20;
   width: 100%;
-  .section_content_wraper {
+  .section_content_wrapper {
     padding: 60px 40px 0px;
     header {
       display: flex;
@@ -86,7 +86,7 @@
 }
 .about {
   background-color: $color-light-xl;
-  .section_content_wraper {
+  .section_content_wrapper {
     padding: 80px 40px 100px;
     display: flex;
     justify-content: center;
@@ -113,7 +113,7 @@
 }
 .pets {
   background-color: $color-light-l;
-  .section_content_wraper {
+  .section_content_wrapper {
     padding: 80px 40px 100px;
     display: flex;
     flex-direction: column;
@@ -137,8 +137,12 @@
       button.arrow {
         @include button_arrow;
       }
-      .cards_wraper {
+      .cards_wrapper {
+        --slider-length: 3;
         display: flex;
+        max-width: 990px;
+        overflow: hidden;
+        transition: all 2s;
         -moz-column-gap: 90px;
              column-gap: 90px;
         .pet_card {
@@ -150,7 +154,7 @@
 }
 .help {
   background-color: $color-light-xl;
-  .section_content_wraper {
+  .section_content_wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,7 +190,7 @@
 }
 .donation {
   background-color: $color-light-l;
-  .section_content_wraper {
+  .section_content_wrapper {
     padding: 80px 0px 100px;
     .donation-wrap {
       width: 915px;
@@ -237,7 +241,7 @@ footer {
     radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%)
       /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
     #211f20;
-  .section_content_wraper {
+  .section_content_wrapper {
     padding: 40px 40px 0px;
     display: flex;
     -moz-column-gap: 160px;
@@ -289,11 +293,11 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-  .section_content_wraper {
+  .section_content_wrapper {
     width: auto;
   }
   .start_screen {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 30px 30px 0px;
       .start_screen-content {
         flex-direction: column;
@@ -318,7 +322,7 @@ footer {
     }
   }
   .about {
-    .section_content_wraper {
+    .section_content_wrapper {
       flex-direction: column;
       align-items: center;
       row-gap: 80px;
@@ -333,23 +337,21 @@ footer {
     }
   }
   .pets {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 80px 30px 100px;
       .pet-slider {
         -moz-column-gap: 12px;
              column-gap: 12px;
-        .cards_wraper {
+        .cards_wrapper {
+          --slider-length: 2;
           -moz-column-gap: 40px;
                column-gap: 40px;
-          .pet_card:last-child {
-            display: none;
-          }
         }
       }
     }
   }
   .help {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 80px 69px 100px;
       .helps_list {
         display: grid;
@@ -366,7 +368,7 @@ footer {
     }
   }
   .donation {
-    .section_content_wraper {
+    .section_content_wrapper {
       .donation-wrap {
         width: auto;
         flex-direction: column;
@@ -385,7 +387,7 @@ footer {
     }
   }
   footer {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 30px 30px 0px;
       flex-direction: column;
       align-items: center;
@@ -415,11 +417,11 @@ footer {
   }
 }
 @media (min-width: 320px) and (max-width: 767px) {
-  .section_content_wraper {
+  .section_content_wrapper {
     width: auto;
   }
   .start_screen {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 30px 10px 0px;
       header {
         .header-menu {
@@ -552,7 +554,7 @@ footer {
     }
   }
   .about {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 43px 25px 42px;
       flex-direction: column;
       align-items: center;
@@ -581,7 +583,7 @@ footer {
     }
   }
   .pets {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 42px 10px;
       row-gap: 42px;
       h3 {
@@ -601,18 +603,16 @@ footer {
           @include button_arrow;
           order: 5;
         }
-        .cards_wraper {
+        .cards_wrapper {
+          --slider-length: 1;
           -moz-column-gap: 0px;
                column-gap: 0px;
-          .pet_card:not(:first-child) {
-            display: none;
-          }
         }
       }
     }
   }
   .help {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 42px 15px;
       row-gap: 42px;
       h3 {
@@ -642,7 +642,7 @@ footer {
     }
   }
   .donation {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 42px 19px;
       .donation-wrap {
         width: auto;
@@ -683,7 +683,7 @@ footer {
     }
   }
   footer {
-    .section_content_wraper {
+    .section_content_wrapper {
       padding: 30px 10px 0px;
       row-gap: 40px;
       flex-direction: column;
